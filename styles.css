@@ -1,0 +1,42 @@
+
+
+body {
+	background: #202020;
+  }
+  
+  #floor {
+	position: absolute;
+	background: white;
+	top: 18em;
+   
+  }
+
+  #center{
+	  margin-left:40%;
+	  font-family: Chewy;
+	  color: white;
+  }
+  
+  #bouncing-ball {
+	position: relative;
+	background: orange;
+	top: 3em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	margin: 0 auto;
+	-webkit-animation: bounce .8s cubic-bezier(.63,.09,.75,.46) infinite alternate;
+	-moz-animation:    bounce .8s cubic-bezier(.63,.09,.75,.46)  infinite alternate;
+	-o-animation:      bounce .8s cubic-bezier(.63,.09,.75,.46)  infinite alternate;
+	animation:         bounce .8s cubic-bezier(.63,.09,.75,.46)  infinite alternate;
+  }
+  
+ 
+  @keyframes bounce {
+	0%, 10% { top: 3em; height: 3em; width: 3em; }
+	15% { height: 3.15em; width: 2.9em; }
+	35% { height: 4em; width: 2.5em; }
+	75% { height: 4em; width: 2.5em; }
+	95% { height: 2em; width: 3.5em; }
+	100% { top: 18em; height: 1em; width: 3em; }
+  }
